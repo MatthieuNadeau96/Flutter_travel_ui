@@ -50,6 +50,7 @@ class DestinationCarousel extends StatelessWidget {
                 ),
                 width: 210,
                 child: Stack(
+                  alignment: Alignment.topCenter,
                   children: <Widget>[
                     Container(
                       height: 120.0,
@@ -77,6 +78,32 @@ class DestinationCarousel extends StatelessWidget {
                             ),
                           ],
                         ),
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20.0),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black26,
+                            offset: Offset(0.0, 2.0),
+                            blurRadius: 6.0,
+                          ),
+                        ],
+                      ),
+                      child: Stack(
+                        children: <Widget>[
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image(
+                              height: 180.0,
+                              width: 180.0,
+                              image: AssetImage(destination.imageUrl),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
