@@ -74,6 +74,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 20.0,
             ),
             DestinationCarousel(),
+            SizedBox(),
             HotelCarousel(),
           ],
         ),
